@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shop – MEM-Mobile</title>
+    <meta name="description"
+        content="Externer Online-Shop (Shopify). Klar gekennzeichnet. Alternativ per iframe einbindbar." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], heading: ['Poppins', 'Inter', 'system-ui', 'sans-serif'] }, colors: { brand: { primary: '#014588', accent: '#e94e1b' } } } } };</script>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body class="font-sans text-gray-900 bg-white">
+    <div id="site-header"></div>
+
+    <!-- Hero Section -->
+    <section
+        class="relative bg-gradient-to-br from-brand-primary via-brand-primary/95 to-brand-primary/90 text-white py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.05) 10px, rgba(255,255,255,.05) 20px);">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4">Shop</h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-8">Geprüfte Geräte mit Garantie – Fair & Transparent</p>
+            <div class="flex flex-wrap justify-center gap-6 text-sm">
+                <div class="flex items-center gap-2">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    <span>12 Monate Garantie</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Geprüfte Qualität</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                    </svg>
+                    <span>Kostenloser Versand</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        <!-- Kategorien -->
+        <!-- <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-heading font-bold mb-3">Kategorien</h2>
+                <p class="text-gray-600">Finden Sie das perfekte Gerät für Ihre Bedürfnisse</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="#smartphones"
+                    class="group rounded-2xl border-2 border-gray-200 p-6 bg-white hover:shadow-2xl hover:-translate-y-1 hover:border-brand-primary/50 transition-all duration-300">
+                    <div
+                        class="h-16 w-16 rounded-xl bg-gradient-to-br from-brand-primary/10 to-brand-primary/5 grid place-content-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">Smartphones</h3>
+                    <p class="text-sm text-gray-600">200+ Modelle</p>
+                </a>
+                <a href="#tablets"
+                    class="group rounded-2xl border-2 border-gray-200 p-6 bg-white hover:shadow-2xl hover:-translate-y-1 hover:border-brand-accent/50 transition-all duration-300">
+                    <div
+                        class="h-16 w-16 rounded-xl bg-gradient-to-br from-brand-accent/10 to-brand-accent/5 grid place-content-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">Tablets</h3>
+                    <p class="text-sm text-gray-600">150+ Modelle</p>
+                </a>
+                <a href="#laptops"
+                    class="group rounded-2xl border-2 border-gray-200 p-6 bg-white hover:shadow-2xl hover:-translate-y-1 hover:border-brand-primary/50 transition-all duration-300">
+                    <div
+                        class="h-16 w-16 rounded-xl bg-gradient-to-br from-brand-primary/10 to-brand-primary/5 grid place-content-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">Laptops</h3>
+                    <p class="text-sm text-gray-600">100+ Modelle</p>
+                </a>
+                <a href="#zubehoer"
+                    class="group rounded-2xl border-2 border-gray-200 p-6 bg-white hover:shadow-2xl hover:-translate-y-1 hover:border-brand-accent/50 transition-all duration-300">
+                    <div
+                        class="h-16 w-16 rounded-xl bg-gradient-to-br from-brand-accent/10 to-brand-accent/5 grid place-content-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">Zubehör</h3>
+                    <p class="text-sm text-gray-600">50+ Artikel</p>
+                </a>
+            </div>
+        </section> -->
+
+        <!-- Featured Products Grid -->
+        <section id="smartphones">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-heading font-bold mb-3">Top Angebote</h2>
+                <p class="text-gray-600">Unsere beliebtesten Geräte – geprüft und mit Garantie</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div
+                    class="group rounded-2xl border-2 border-gray-200 overflow-hidden bg-white hover:shadow-2xl hover:-translate-y-2 hover:border-brand-primary/50 transition-all duration-300">
+                    <div
+                        class="relative aspect-square bg-gradient-to-br from-blue-50 to-blue-100 grid place-content-center">
+                        <span
+                            class="absolute top-3 right-3 px-3 py-1 bg-red-500 text-white text-xs font-bold rounded-full">Top-Seller</span>
+                        <svg class="h-24 w-24 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-1">iPhone 13</h3>
+                        <p class="text-sm text-gray-600 mb-2">128 GB • Sehr guter Zustand</p>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-xs text-gray-500">Zustand:</span>
+                            <div class="flex gap-1">
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-gray-300"></span>
+                            </div>
+                        </div>
+                        <div class="flex items-baseline gap-2 mb-4">
+                            <p class="text-2xl font-bold text-brand-primary">549€</p>
+                            <span class="text-sm text-gray-400 line-through">699€</span>
+                        </div>
+                        <button
+                            class="w-full px-4 py-3 rounded-xl bg-gradient-to-r from-brand-primary to-brand-primary/90 text-white hover:shadow-xl hover:scale-105 transition-all duration-300 font-semibold">Details
+                            ansehen</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div
+                    class="group rounded-2xl border-2 border-gray-200 overflow-hidden bg-white hover:shadow-2xl hover:-translate-y-2 hover:border-brand-accent/50 transition-all duration-300">
+                    <div
+                        class="relative aspect-square bg-gradient-to-br from-purple-50 to-purple-100 grid place-content-center">
+                        <span
+                            class="absolute top-3 right-3 px-3 py-1 bg-green-500 text-white text-xs font-bold rounded-full">Wie
+                            Neu</span>
+                        <svg class="h-24 w-24 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-1">Samsung Galaxy S22</h3>
+                        <p class="text-sm text-gray-600 mb-2">256 GB • Wie neu</p>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-xs text-gray-500">Zustand:</span>
+                            <div class="flex gap-1">
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                            </div>
+                        </div>
+                        <div class="flex items-baseline gap-2 mb-4">
+                            <p class="text-2xl font-bold text-brand-primary">479€</p>
+                        </div>
+                        <button
+                            class="w-full px-4 py-3 rounded-xl bg-gradient-to-r from-brand-accent to-brand-accent/90 text-white hover:shadow-xl hover:scale-105 transition-all duration-300 font-semibold">Details
+                            ansehen</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div
+                    class="group rounded-2xl border-2 border-gray-200 overflow-hidden bg-white hover:shadow-2xl hover:-translate-y-2 hover:border-brand-primary/50 transition-all duration-300">
+                    <div
+                        class="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 grid place-content-center">
+                        <span
+                            class="absolute top-3 right-3 px-3 py-1 bg-brand-accent text-white text-xs font-bold rounded-full">Reduziert</span>
+                        <svg class="h-24 w-24 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-1">iPad Air 2022</h3>
+                        <p class="text-sm text-gray-600 mb-2">64 GB • Neuwertig</p>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-xs text-gray-500">Zustand:</span>
+                            <div class="flex gap-1">
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                            </div>
+                        </div>
+                        <div class="flex items-baseline gap-2 mb-4">
+                            <p class="text-2xl font-bold text-brand-primary">429€</p>
+                            <span class="text-sm text-gray-400 line-through">499€</span>
+                        </div>
+                        <button
+                            class="w-full px-4 py-3 rounded-xl bg-gradient-to-r from-brand-primary to-brand-primary/90 text-white hover:shadow-xl hover:scale-105 transition-all duration-300 font-semibold">Details
+                            ansehen</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div
+                    class="group rounded-2xl border-2 border-gray-200 overflow-hidden bg-white hover:shadow-2xl hover:-translate-y-2 hover:border-brand-accent/50 transition-all duration-300">
+                    <div
+                        class="relative aspect-square bg-gradient-to-br from-slate-50 to-slate-100 grid place-content-center">
+                        <svg class="h-24 w-24 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-1">MacBook Air M1</h3>
+                        <p class="text-sm text-gray-600 mb-2">8 GB RAM • 256 GB SSD</p>
+                        <div class="flex items-center gap-1 mb-3">
+                            <span class="text-xs text-gray-500">Zustand:</span>
+                            <div class="flex gap-1">
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                                <span class="h-2 w-2 rounded-full bg-gray-300"></span>
+                            </div>
+                        </div>
+                        <div class="flex items-baseline gap-2 mb-4">
+                            <p class="text-2xl font-bold text-brand-primary">749€</p>
+                        </div>
+                        <button
+                            class="w-full px-4 py-3 rounded-xl bg-gradient-to-r from-brand-accent to-brand-accent/90 text-white hover:shadow-xl hover:scale-105 transition-all duration-300 font-semibold">Details
+                            ansehen</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- External Shop Link -->
+        <section
+            class="mt-20 rounded-2xl bg-gradient-to-br from-brand-primary via-brand-primary/95 to-brand-primary/90 p-12 text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10"
+                style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.05) 10px, rgba(255,255,255,.05) 20px);">
+            </div>
+            <div class="relative text-center">
+                <div
+                    class="inline-flex h-20 w-20 rounded-2xl bg-white/10 backdrop-blur-sm grid place-content-center mb-6">
+                    <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-heading font-bold mb-4">Vollständiges Sortiment im Online-Shop</h2>
+                <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Unser komplettes Sortiment mit über 500 Geräten
+                    finden Sie in unserem externen Online-Shop. Sicher einkaufen mit PayPal, Klarna & mehr.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#"
+                        class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-brand-primary hover:bg-gray-50 hover:shadow-2xl hover:scale-105 transition-all duration-300 font-semibold text-lg"
+                        rel="noopener" target="_blank">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        Zum Online-Shop
+                    </a>
+                    <a href="/pages/contact.html"
+                        class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border-2 border-white/50 text-white hover:bg-white/20 hover:shadow-2xl hover:scale-105 transition-all duration-300 font-semibold text-lg">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        In Filiale beraten lassen
+                    </a>
+                </div>
+                <p class="mt-6 text-sm text-white/70">⚠️ Sie verlassen unsere Website und werden zu unserem externen
+                    Shop-Partner weitergeleitet</p>
+            </div>
+        </section>
+
+        <!-- Shop Features -->
+        <section class="mt-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-heading font-bold mb-3">Warum bei uns kaufen?</h2>
+                <p class="text-gray-600">Ihre Vorteile beim Kauf gebrauchter Geräte</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div
+                    class="group rounded-2xl border-2 border-gray-200 p-8 bg-white/80 backdrop-blur-sm hover:shadow-2xl hover:-translate-y-1 hover:border-brand-primary/50 transition-all duration-300">
+                    <div
+                        class="h-16 w-16 rounded-xl bg-gradient-to-br from-brand-primary/10 to-brand-primary/5 grid place-content-center text-brand-primary mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">12 Monate Garantie</h3>
+                    <p class="text-gray-600">Alle Geräte mit umfassender Gewährleistung. Bei Problemen tauschen wir das
+                        Gerät aus oder reparieren es kostenlos.</p>
+                </div>
+                <div
+                    class="group rounded-2xl border-2 border-gray-200 p-8 bg-white/80 backdrop-blur-sm hover:shadow-2xl hover:-translate-y-1 hover:border-brand-accent/50 transition-all duration-300">
+                    <div
+                        class="h-16 w-16 rounded-xl bg-gradient-to-br from-brand-accent/10 to-brand-accent/5 grid place-content-center text-brand-accent mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Geprüfte Qualität</h3>
+                    <p class="text-gray-600">Jedes Gerät wird von unseren Technikern ausführlich getestet und
+                        professionell aufbereitet.</p>
+                </div>
+                <div
+                    class="group rounded-2xl border-2 border-gray-200 p-8 bg-white/80 backdrop-blur-sm hover:shadow-2xl hover:-translate-y-1 hover:border-brand-primary/50 transition-all duration-300">
+                    <div
+                        class="h-16 w-16 rounded-xl bg-gradient-to-br from-green-100 to-green-50 grid place-content-center text-green-600 mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Faire Preise</h3>
+                    <p class="text-gray-600">Transparente Kalkulation ohne versteckte Kosten. Bis zu 50% günstiger als
+                        Neugeräte.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="/js/components.js" defer></script>
+    <script src="/js/contact-widget.js" defer></script>
+</body>
+
+</html>

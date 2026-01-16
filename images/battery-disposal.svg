@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450" fill="currentColor">
+  <!-- Crossed out bin symbol -->
+  <path d="M0 0 L450 450 M450 0 L0 450" stroke="currentColor" stroke-width="20" fill="none"/>
+  <!-- Bin body -->
+  <path d="M100 90 L100 420 Q100 430 110 430 L340 430 Q350 430 350 420 L350 90 Z"/>
+  <!-- Bin lid -->
+  <path d="M90 70 Q90 60 100 60 L120 60 L120 45 Q120 40 125 40 L200 40 L240 40 Q245 40 245 45 L245 60 L350 60 Q360 60 360 70 L360 90 Q360 95 355 95 L95 95 Q90 95 90 90 Z"/>
+  <!-- Bin handle -->
+  <circle cx="343" cy="70" r="12"/>
+  <path d="M330 140 L350 140"/>
+  <!-- Bin wheel -->
+  <circle cx="295" cy="385" r="35"/>
+  <circle cx="295" cy="385" r="15" fill="white"/>
+  <!-- Additional bin details -->
+  <rect x="197" y="165" width="56" height="25"/>
+</svg>

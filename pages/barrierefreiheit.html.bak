@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Barrierefreiheit – MEM-Mobile</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Poppins', 'Inter', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        brand: {
+                            primary: '#014588',
+                            accent: '#e94e1b',
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body class="font-sans text-gray-900 bg-white">
+    <div id="site-header"></div>
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h1 class="text-3xl font-bold">Erklärung zur Barrierefreiheit</h1>
+        <p class="mt-2 text-gray-700">Wir sind bestrebt, unsere Website im Einklang mit WCAG 2.1 AA barrierearm zu
+            gestalten.</p>
+
+        <section class="mt-6 rounded-lg border border-gray-200 p-6 bg-white">
+            <h2 class="text-xl font-semibold">Maßnahmen</h2>
+            <ul class="list-disc ml-5 text-gray-700">
+                <li>Semantisches HTML und klare Überschriftenstrukturen.</li>
+                <li>ARIA-Attribute, Tastaturbedienbarkeit und Fokusmanagement.</li>
+                <li>Kontrastreiche Farben und responsives, mobiles Design.</li>
+                <li>Berücksichtigung von „Bewegung reduzieren“.</li>
+            </ul>
+        </section>
+
+        <section class="mt-6 rounded-lg border border-gray-200 p-6 bg-white">
+            <h2 class="text-xl font-semibold">Bekannte Einschränkungen</h2>
+            <p class="mt-2 text-gray-700">Trotz unserer Bemühungen können einzelne Inhalte noch nicht vollständig
+                barrierefrei sein. Wir arbeiten kontinuierlich daran, die Zugänglichkeit zu verbessern.</p>
+        </section>
+
+        <section class="mt-6 rounded-lg border border-gray-200 p-6 bg-white">
+            <h2 class="text-xl font-semibold">Feedback</h2>
+            <p class="mt-2 text-gray-700">Wenn Sie auf Barrieren stoßen, informieren Sie uns bitte: <a class="underline"
+                    href="mailto:info@mem-mobile.de">info@mem-mobile.de</a>. Wir bemühen uns um schnelle Abhilfe.</p>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="/js/components.js" defer></script>
+    <script src="/js/contact-widget.js" defer></script>
+</body>
+
+</html>

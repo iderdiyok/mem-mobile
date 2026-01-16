@@ -1,0 +1,80 @@
+<!-- Wiederverwendbarer Header mit Sticky, Mobile-Menü und ARIA -->
+<!-- Top-Kontaktleiste wie RepairPress -->
+<div class="bg-brand-primary text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+            <span class="hidden sm:inline-flex items-center gap-1">
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <a class="underline text-white" href="tel:+4917692824777">+49 176 92824777</a>
+            </span>
+            <span class="inline-flex items-center gap-1">
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <a class="underline text-white" href="mailto:info@mem-mobile.de">info@mem-mobile.de</a>
+            </span>
+        </div>
+        <div class="hidden md:flex items-center gap-3">
+            <span class="inline-flex items-center gap-1">
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Mo–Sa: 08:00–21:00 Uhr / So: Geschlossen</span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<header
+    class="header-sticky bg-white/80 backdrop-blur-xl border-b border-gray-200/50 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <a href="/index.html" class="flex items-center gap-2" aria-label="Zur Startseite">
+                <!-- MEM-Mobile Logo -->
+                <img src="https://mem-mobile.de/wp-content/uploads/2021/05/cropped-memMobile-logo-200x67.png"
+                    alt="MEM-Mobile Logo" class="h-10 w-auto object-contain">
+            </a>
+
+            <button id="menu-toggle"
+                class="sm:hidden inline-flex items-center justify-center p-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-accent"
+                aria-controls="mobile-nav" aria-expanded="false" aria-label="Menü öffnen">
+                <!-- Heroicon: Bars -->
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <nav id="primary-nav" class="hidden sm:flex sm:items-center sm:gap-6" aria-label="Hauptnavigation">
+                <a class="text-gray-700 hover:text-brand-accent transition" href="/index.html">Home</a>
+                <a class="text-gray-700 hover:text-brand-accent transition" href="/pages/services.html">Services</a>
+                <a class="text-gray-700 hover:text-brand-accent transition" href="/pages/buy-sell.html">An- &
+                    Verkauf</a>
+                <a class="text-gray-700 hover:text-brand-accent transition" href="/pages/contracts.html">Verträge</a>
+                <a class="text-gray-700 hover:text-brand-accent transition" href="/pages/contact.html">Kontakt</a>
+                <!-- <a class="text-brand-primary font-semibold hover:text-brand-accent transition"
+                    href="/pages/shop.html">Shop</a> -->
+            </nav>
+        </div>
+    </div>
+
+    <!-- Mobile Menü -->
+    <div class="sm:hidden" role="region" aria-label="Mobiles Menü">
+        <nav id="mobile-nav" class="hidden px-4 pb-4" aria-label="Mobile Hauptnavigation">
+            <ul class="space-y-2">
+                <li><a class="block p-2 rounded hover:bg-gray-100" href="/index.html">Home</a></li>
+                <li><a class="block p-2 rounded hover:bg-gray-100" href="/pages/services.html">Services</a></li>
+                <li><a class="block p-2 rounded hover:bg-gray-100" href="/pages/buy-sell.html">An- & Verkauf</a></li>
+                <li><a class="block p-2 rounded hover:bg-gray-100" href="/pages/contracts.html">Verträge</a></li>
+                <li><a class="block p-2 rounded hover:bg-gray-100" href="/pages/contact.html">Kontakt</a></li>
+                <!-- <li><a class="block p-2 rounded bg-brand-accent/10 text-brand-accent" href="/pages/shop.html">Shop</a> -->
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

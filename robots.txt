@@ -1,0 +1,11 @@
+# robots.txt für mem-mobile.de
+
+User-agent: *
+Allow: /
+Disallow: /components/
+
+# Sitemap
+Sitemap: https://www.mem-mobile.de/sitemap.xml
+
+# Crawl-Delay für schonenden Zugriff
+Crawl-delay: 1

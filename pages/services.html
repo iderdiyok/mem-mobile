@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services – MEM-Mobile</title>
+    <meta name="description"
+        content="Übersicht aller Reparatur-Services: Smartphone, Tablet, PC & Laptop, Display-Service, Datenrettung, Software-Hilfe, Reinigung, SIM-Karten." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], heading: ['Poppins', 'Inter', 'system-ui', 'sans-serif'] }, colors: { brand: { primary: '#014588', accent: '#e94e1b' } } } } };</script>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body class="font-sans text-gray-900 bg-white">
+    <div id="site-header"></div>
+
+    <!-- Hero Section -->
+    <section
+        class="relative bg-gradient-to-br from-brand-primary via-brand-primary/95 to-brand-primary/90 text-white py-16 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0"
+                style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.05) 10px, rgba(255,255,255,.05) 20px);">
+            </div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-fade>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight">Unsere Services</h1>
+            <p class="mt-4 text-xl text-white/90 max-w-2xl mx-auto">Professionelle Reparatur- und Serviceleistungen für
+                Ihre Geräte</p>
+
+            <!-- Trust Badges -->
+            <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm">
+                <div class="flex items-center gap-2">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <span>Express in 30 Min</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>12 Monate Garantie</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    <span>Kostenlose Diagnose</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Featured Services -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold mb-6" data-fade>Haupt-Services</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Smartphone-Reparatur -->
+                <section id="smartphone"
+                    class="group relative rounded-xl border-2 border-gray-200 p-8 bg-white/80 backdrop-blur-sm hover:shadow-2xl hover:-translate-y-2 hover:border-brand-primary/50 transition-all duration-300"
+                    aria-labelledby="smartphone-title" data-fade>
+                    <div class="absolute top-4 right-4">
+                        <span
+                            class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-brand-accent text-white text-xs font-semibold">
+                            <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                            Express
+                        </span>
+                    </div>
+                    <div
+                        class="h-16 w-16 rounded-xl bg-gradient-to-br from-brand-primary to-brand-primary/80 grid place-content-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h2 id="smartphone-title" class="text-2xl font-bold mb-2">Smartphone-Reparatur</h2>
+                    <p class="text-brand-primary font-semibold mb-3">ab 49€</p>
+                    <p class="text-gray-700 mb-4">Display, Akku, Kamera, Ladebuchse und mehr. Express-Reparaturen in 30
+                        Minuten möglich.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Display-Austausch (LCD/OLED)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Akku-Wechsel</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Kamera-Reparatur</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Ladebuchse & Anschlüsse</span>
+                        </li>
+                    </ul>
+                    <a href="/pages/contact.html"
+                        class="inline-flex items-center gap-2 text-brand-primary font-semibold hover:gap-3 transition-all">
+                        Jetzt anfragen
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </section>
+
+                <!-- Tablet-Reparatur -->
+                <section id="tablet"
+                    class="group relative rounded-xl border-2 border-gray-200 p-8 bg-white/80 backdrop-blur-sm hover:shadow-2xl hover:-translate-y-2 hover:border-brand-primary/50 transition-all duration-300"
+                    aria-labelledby="tablet-title" data-fade>
+                    <div
+                        class="h-16 w-16 rounded-xl bg-gradient-to-br from-brand-primary to-brand-primary/80 grid place-content-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h2 id="tablet-title" class="text-2xl font-bold mb-2">Tablet-Reparatur</h2>
+                    <p class="text-brand-primary font-semibold mb-3">ab 59€</p>
+                    <p class="text-gray-700 mb-4">Schnelle und zuverlässige Reparaturen mit Original- oder hochwertigen
+                        Ersatzteilen.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Display-Tausch</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Akku-Service</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Touchscreen-Probleme</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Software-Updates</span>
+                        </li>
+                    </ul>
+                    <a href="/pages/contact.html"
+                        class="inline-flex items-center gap-2 text-brand-primary font-semibold hover:gap-3 transition-all">
+                        Jetzt anfragen
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </section>
+
+                <!-- PC & Laptop-Reparatur -->
+                <section id="pc"
+                    class="group relative rounded-xl border-2 border-gray-200 p-8 bg-white/80 backdrop-blur-sm hover:shadow-2xl hover:-translate-y-2 hover:border-brand-primary/50 transition-all duration-300"
+                    aria-labelledby="pc-title" data-fade>
+                    <div
+                        class="h-16 w-16 rounded-xl bg-gradient-to-br from-brand-primary to-brand-primary/80 grid place-content-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h2 id="pc-title" class="text-2xl font-bold mb-2">PC- & Laptop-Reparatur</h2>
+                    <p class="text-brand-primary font-semibold mb-3">ab 39€</p>
+                    <p class="text-gray-700 mb-4">Hardware-Tausch, Reinigung, Aufrüstungen und Software-Fehlerbehebung.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Hardware-Upgrade (RAM, SSD)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Festplatten-Austausch</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Lüfterreinigung</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Windows-Installation</span>
+                        </li>
+                    </ul>
+                    <a href="/pages/contact.html"
+                        class="inline-flex items-center gap-2 text-brand-primary font-semibold hover:gap-3 transition-all">
+                        Jetzt anfragen
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </section>
+            </div>
+        </div>
+
+        <!-- Additional Services -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold mb-6" data-fade>Weitere Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Display-Service -->
+                <section id="display"
+                    class="group rounded-xl border border-gray-200 p-6 bg-white hover:shadow-xl hover:-translate-y-1 hover:border-brand-accent/50 transition-all duration-300"
+                    aria-labelledby="display-title" data-fade>
+                    <div
+                        class="h-12 w-12 rounded-lg bg-gradient-to-br from-brand-accent/10 to-brand-accent/5 grid place-content-center text-brand-accent mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h2 id="display-title" class="text-xl font-semibold mb-2">Display-Service</h2>
+                    <p class="text-base text-gray-700 mb-3">Schneller Austausch defekter Displays aller Marken mit
+                        Gewährleistung.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• iPhone & Samsung Displays</li>
+                        <li>• Huawei, Xiaomi, OnePlus</li>
+                        <li>• iPad & Tablet Displays</li>
+                        <li>• Laptop-Bildschirme</li>
+                    </ul>
+                </section>
+
+                <!-- Datenrettung -->
+                <section id="data"
+                    class="group rounded-xl border border-gray-200 p-6 bg-white hover:shadow-xl hover:-translate-y-1 hover:border-brand-accent/50 transition-all duration-300"
+                    aria-labelledby="data-title" data-fade>
+                    <div
+                        class="h-12 w-12 rounded-lg bg-gradient-to-br from-brand-accent/10 to-brand-accent/5 grid place-content-center text-brand-accent mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                        </svg>
+                    </div>
+                    <h2 id="data-title" class="text-xl font-semibold mb-2">Datenrettung</h2>
+                    <p class="text-base text-gray-700 mb-3">Sichere Wiederherstellung gelöschter oder verlorener Daten
+                        von allen Geräten.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Gelöschte Dateien wiederherstellen</li>
+                        <li>• Defekte Festplatten</li>
+                        <li>• SD-Karten & USB-Sticks</li>
+                        <li>• Wasserschaden-Daten</li>
+                    </ul>
+                </section>
+
+                <!-- Software-Hilfe -->
+                <section id="software"
+                    class="group rounded-xl border border-gray-200 p-6 bg-white hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary/50 transition-all duration-300"
+                    aria-labelledby="software-title" data-fade>
+                    <div
+                        class="h-12 w-12 rounded-lg bg-gradient-to-br from-brand-primary/10 to-brand-primary/5 grid place-content-center text-brand-primary mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                    </div>
+                    <h2 id="software-title" class="text-xl font-semibold mb-2">Software-Hilfe</h2>
+                    <p class="text-base text-gray-700 mb-3">Updates, Virenentfernung, Einrichtung und Optimierung aller
+                        Systeme.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Betriebssystem-Updates</li>
+                        <li>• Viren & Malware entfernen</li>
+                        <li>• App-Installation</li>
+                        <li>• Performance-Optimierung</li>
+                    </ul>
+                </section>
+
+                <!-- Reinigung -->
+                <section id="cleaning"
+                    class="group rounded-xl border border-gray-200 p-6 bg-white hover:shadow-xl hover:-translate-y-1 hover:border-brand-accent/50 transition-all duration-300"
+                    aria-labelledby="cleaning-title" data-fade>
+                    <div
+                        class="h-12 w-12 rounded-lg bg-gradient-to-br from-brand-accent/10 to-brand-accent/5 grid place-content-center text-brand-accent mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        </svg>
+                    </div>
+                    <h2 id="cleaning-title" class="text-xl font-semibold mb-2">Reinigung</h2>
+                    <p class="text-base text-gray-700 mb-3">Professionelle Innen- und Außenreinigung Ihrer Geräte für
+                        längere Lebensdauer.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Laptop-Lüfterreinigung</li>
+                        <li>• Tastatur-Reinigung</li>
+                        <li>• Display-Politur</li>
+                        <li>• Gehäuse-Aufbereitung</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- SIM-Karten Section -->
+        <div class="mb-12">
+            <div class="rounded-xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-8 hover:shadow-lg transition-all duration-300"
+                data-fade>
+                <div class="flex items-start gap-6">
+                    <div
+                        class="h-16 w-16 rounded-xl bg-gradient-to-br from-brand-primary to-brand-primary/80 grid place-content-center text-white flex-shrink-0">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-2xl font-bold mb-2">SIM-Karten & Tarife</h2>
+                        <p class="text-gray-700 mb-4">Beratung, Aktivierung und Tarifempfehlungen für alle Provider.</p>
+                        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="flex items-center gap-2 text-sm text-gray-700">
+                                <svg class="h-5 w-5 text-brand-primary" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Sofort-Aktivierung</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700">
+                                <svg class="h-5 w-5 text-brand-primary" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>eSIM-Einrichtung</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700">
+                                <svg class="h-5 w-5 text-brand-primary" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Rufnummernmitnahme</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700">
+                                <svg class="h-5 w-5 text-brand-primary" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Tarif-Wechsel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="text-center mb-16" data-fade>
+            <div class="inline-flex flex-col sm:flex-row gap-4">
+                <a href="/pages/contact.html"
+                    class="btn-ripple inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-brand-primary text-white hover:bg-brand-primary/90 hover:scale-105 hover:shadow-xl transition-all duration-300 font-semibold">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                    Jetzt Reparatur anfragen
+                </a>
+                <a href="tel:+4917692824777"
+                    class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white hover:scale-105 transition-all duration-300 font-semibold">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    Direkt anrufen
+                </a>
+            </div>
+        </div>
+
+        <!-- Money Transfer Services -->
+        <section
+            class="relative rounded-2xl overflow-hidden bg-gradient-to-br from-brand-primary via-brand-primary/95 to-brand-primary/90 text-white p-12"
+            aria-labelledby="mts-title" data-fade>
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute inset-0"
+                    style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.05) 10px, rgba(255,255,255,.05) 20px);">
+                </div>
+            </div>
+            <div class="relative">
+                <div class="flex items-start gap-6 mb-8">
+                    <div
+                        class="h-16 w-16 rounded-xl bg-white/10 backdrop-blur-sm grid place-content-center text-white flex-shrink-0">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 id="mts-title" class="text-3xl font-bold mb-3">Money Transfer Services</h2>
+                        <p class="text-xl text-white/90">Weltweite Geldtransfers in Minuten</p>
+                        <p class="mt-2 text-white/80">Wir bieten internationale Geldtransfer-Dienste an:
+                            <strong>MoneyGram</strong>, <strong>RIA</strong> und <strong>Western Union</strong>.</p>
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-3 gap-6">
+                    <!-- MoneyGram -->
+                    <div
+                        class="group rounded-xl border-2 border-white/20 bg-white/10 backdrop-blur-sm p-8 hover:bg-white/20 hover:border-white/40 hover:scale-105 transition-all duration-300">
+                        <div class="h-20 w-full flex items-center justify-center mb-4">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@11/icons/moneygram.svg"
+                                alt="MoneyGram Logo" class="h-16 object-contain filter brightness-0 invert"
+                                loading="lazy" />
+                        </div>
+                        <p class="text-center text-white font-semibold">Global Transfers</p>
+                        <p class="text-center text-sm text-white/70 mt-1">Schnell & sicher</p>
+                    </div>
+                    <!-- RIA -->
+                    <div
+                        class="group rounded-xl border-2 border-white/20 bg-white/10 backdrop-blur-sm p-8 hover:bg-white/20 hover:border-white/40 hover:scale-105 transition-all duration-300">
+                        <div class="h-20 w-full flex items-center justify-center mb-4">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ria%20logo.svg"
+                                alt="RIA Money Transfer Logo" class="h-16 object-contain filter brightness-0 invert"
+                                loading="lazy" />
+                        </div>
+                        <p class="text-center text-white font-semibold">Money Transfer</p>
+                        <p class="text-center text-sm text-white/70 mt-1">Weltweit verfügbar</p>
+                    </div>
+                    <!-- Western Union -->
+                    <div
+                        class="group rounded-xl border-2 border-white/20 bg-white/10 backdrop-blur-sm p-8 hover:bg-white/20 hover:border-white/40 hover:scale-105 transition-all duration-300">
+                        <div class="h-20 w-full flex items-center justify-center mb-4">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@11/icons/westernunion.svg"
+                                alt="Western Union Logo" class="h-16 object-contain filter brightness-0 invert"
+                                loading="lazy" />
+                        </div>
+                        <p class="text-center text-white font-semibold">Western Union</p>
+                        <p class="text-center text-sm text-white/70 mt-1">Marktführer</p>
+                    </div>
+                </div>
+                <div class="mt-6 text-center">
+                    <a href="/pages/contact.html"
+                        class="inline-flex items-center gap-2 text-white hover:text-white/80 transition font-semibold">
+                        Filialen finden
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="/js/components.js" defer></script>
+    <script src="/js/contact-widget.js" defer></script>
+</body>
+
+</html>
