@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </a>
                     
                     <!-- E-Mail -->
-                    <a href="mailto:mem3@mem-mobile.de" class="flex items-center gap-3 p-3 rounded-lg border border-gray-200 hover:border-brand-accent hover:bg-brand-accent/5 transition group">
+                    <a href="mailto:info@mem-mobile.de" class="flex items-center gap-3 p-3 rounded-lg border border-gray-200 hover:border-brand-accent hover:bg-brand-accent/5 transition group">
                         <div class="h-10 w-10 rounded-full bg-brand-accent/10 text-brand-accent grid place-content-center flex-shrink-0 group-hover:bg-brand-accent group-hover:text-white transition">
                             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                         <div>
                             <p class="text-xs text-gray-600">E-Mail senden</p>
-                            <p class="font-semibold text-gray-900">mem3@mem-mobile.de</p>
+                            <p class="font-semibold text-gray-900">info@mem-mobile.de</p>
                         </div>
                     </a>
 

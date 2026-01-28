@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 session_start();
 
 // Konfiguration
-// $empfaenger = 'mem3@mem-mobile.de';
+// $empfaenger = 'info@mem-mobile.de';
 $empfaenger = 'idsmail@mailinator.com';
 $betreff = 'Neue Kontaktanfrage von MEM-Mobile Website';
 $erfolg_url = '/pages/contact.html?success=1';
